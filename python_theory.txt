@@ -1,0 +1,137 @@
+What is Python?
+Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+
+It is used for:
+web development (server-side),
+software development,
+mathematics,
+system scripting.
+
+
+What can Python do?
+Python can be used on a server to create web applications.
+Python can be used alongside software to create workflows.
+Python can connect to database systems. It can also read and modify files.
+Python can be used to handle big data and perform complex mathematics.
+Python can be used for rapid prototyping, or for production-ready software development.
+
+Python Indentation
+The indentation in Python is very important. Python uses indentation to indicate a block of code.
+
+Python Variables
+Python has no command for declaring a variable.
+In Python, a variable is created when you assign a value to it:
+x = 5
+y = "Hello, World!"
+
+
+Print Without a New Line
+By default, the print() function ends with a new line.
+print("Hello World!", end=" ")
+
+Python Variables
+Many Values to Multiple Variables: Python allows you to assign values to multiple variables in one line:
+x, y, z = "Orange", "Banana", "Cherry"
+print(x, y, z) OR print(x + y + z)
+
+
+The global Keyword: To create a global variable inside a function, you can use the global keyword.
+x = "awesome"
+def myfunc():
+  global x
+  x = "fantastic"
+
+myfunc()
+print("Python is " + x)
+
+
+Built-in Data Types
+Python has the following data types built-in by default, in these categories:
+
+Text Type:	str
+Numeric Types:	int, float, complex
+Sequence Types:	list, tuple, range
+Mapping Type:	dict
+Set Types:	set, frozenset
+Boolean Type:	bool
+Binary Types:	bytes, bytearray, memoryview
+None Type:	NoneType
+
+
+
+List
+- Lists are used to store multiple items in a single variable. 
+- Lists are created using square brackets:
+thislist = ["apple", "banana", "cherry"]
+- List items are ordered, changeable, and allow duplicate values.
+- Lists are ordered, it means that the items have a defined order, and that order will not change. If you add new items to a list, the new items will be placed at the end of the list.
+- Since lists are indexed, lists can have items with the same value:
+
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[1]) #access Items, will print banana
+print(thislist[-1]) #negative indexing, will print mango
+print(thislist[2:5]) #range, will print items from 2 to 5, this will be a new list
+
+thislist.append("orange") #add item to the list
+thislist.insert(1, "orange") #Insert an item as the second position
+thislist.remove("banana") #remove item. If there are more than one item with the specified value, the remove() method removes the first occurrence:
+thislist.pop() #removes the last item
+thislist.pop(1) #removes the specified index.
+del thislist #removes list
+
+Loop Through a List
+for x in thislist:
+  print(x)
+
+To print with index number
+for i in range(len(thislist)):
+  print(i, thislist[i])
+
+
+List Comprehension
+- List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.
+[print(x) for x in thislist]
+
+
+Sort List Alphanumerically
+thislist.sort()
+
+Sort Descending
+thislist.sort(reverse = True)
+
+
+Copy a List
+mylist = thislist.copy()
+mylist = list(thislist) #list method
+mylist = thislist[:] #slice Operator
+
+Join Lists
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+
+Method 1:
+list3 = list1 + list2
+
+Method 2:
+for x in list2:
+  list1.append(x)
+  
+Method 3: add list2 at the end of list1
+list1.extend(list2)
+   
+
+TUPLES
+- A tuple is a collection which is ordered and unchangeable.
+- Tuples are written with round brackets*.
+
+
+
+
+
+
+
+
+
+
+
